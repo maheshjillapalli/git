@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Combination</title>
+    <style>
+      /* Descendant  style*/
+      #descendantSelector p {
+        color:green;
+      }
+
+       /* Child Selector style */
+      div > p {
+        color: lightblue;
+      }
+
+      /* Adjacent Selector style */
+      h1 + p {
+        color: darkmagenta;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Descendant Selector  -->
+    <h1>MAHESH JILLAPALLI</h1>
+    <div id="descendantSelector">
+      <p>I AM STUDYING BTECH CSE.</p>
+      <div>
+        <p>I AM FROM KODAD.</p>
+      </div>
+    </div>
+
+    <!-- Child Selector -->
+    <h1>MY HOBIES</h1>
+    <div id="childSelector">
+      <p>WATCHING 24/7 MOBILE.</p>
+      <span>
+        <p>MY MOBILE ONEPLUS.</p>
+      </span>
+    </div>
+
+    <!-- Adjacent Sibling Selector  -->
+    <h1 id="adjacentSibling">TRIVENI AKKA ONE OF MY SISTER</h1>
+    <p>SHE IS FROM NANDIGAMA.</p>
+    <p>.</p>
+  </body>
+</html>
