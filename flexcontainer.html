@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+}
+
+.flex-item-left {
+  background-color:aqua;
+  padding: 10px;
+  flex: 50%;
+}
+
+.flex-item-right {
+  background-color: whitesmoke;
+  padding: 10px;
+  flex: 50%;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<h1>CSE-B</h1>
+
+<p>ALL THE CSE-B STUDENTS ARE MUST SHOULD ATTEND THE FULL STACK DEVOLOPMENT COURSE AT OUR COLLEGE</p>
+<p>RAJESH RANGISHETTY INTRODUCED THE ELBERT COMPANY</p>
+SO MUST AND SHOULD ALL ARE WELCOME TO OUR AUDITORIUM</b></p>
+
+<div class="flex-container">
+  <div class="flex-item-left">INTRESTED</div>
+  <div class="flex-item-right">NOT INTREST</div>
+</div>
+
+</body>
+</html>
+
+

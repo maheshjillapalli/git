@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Anurag Engineering College - Bus Fee Collection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5; /* Smoky white background */
+        }
+        header {
+            background-color: #1e3d58;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #333;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        .introduction {
+            text-align: center;
+            font-size: 22px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .fees-section {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .fees-section table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .fees-section th, .fees-section td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        .fees-section th {
+            background-color: #1e3d58;
+            color: white;
+        }
+        .student-details form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .student-details input, .student-details select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .student-details input[type="submit"] {
+            background-color: #1e3d58;
+            color: white;
+            border: black;
+            cursor: pointer;
+        }
+        .student-details input[type="submit"]:hover {
+            background-color: #3c5c79;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Anurag Engineering College</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#fees">FEES</a></li>
+            <li><a href="#student-details">STUDENT DETAILS</a></li>
+            <li><a href="#payment">PAYMENT MODE</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Introduction Section -->
+        <div class="introduction">
+            <h2>Welcome to Anurag Engineering College</h2>
+            <p>THE ANURAG ENGINEERING STUDENTS SHOULD PAY THE BUS FEESES AS EARLY AS POSSIBLE</p>
+        </div>
+
+        <!-- Fees Section -->
+        <div class="fees-section" id="fees">
+            <h3>Bus Fee Collection</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Route</th>
+                        <th>Fee</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Khammam</td>
+                        <td>₹20,000</td>
+                    </tr>
+                    <tr>
+                        <td>Suryapet</td>
+                        <td>₹20,000</td>
+                    </tr>
+                    <tr>
+                        <td>Munagala</td>
+                        <td>₹10,000</td>
+                    </tr>
+                    <tr>
+                        <td>Kodad</td>
+                        <td>₹7,000</td>    
+                    <tr>
+                        <td>jaggayapeta</td>
+                        <td>₹13000</td>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Student Details Form -->
+        <div class="student-details" id="student-details">
+            <h3>Student Details</h3>
+            <form>
+                <label for="name">Student Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="rollno">Roll Number:</label>
+                <input type="text" id="rollno" name="rollno" required>
+
+                <label for="route">Select Route:</label>
+                <select id="route" name="route" required>
+                    <option value="Khammam">Khammam</option>
+                    <option value="Suryapet">Suryapet</option>
+                    <option value="Munagala">Munagala</option>
+                    <option value="Kodad">Kodad</option>
+                </select>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <!-- Payment Section -->
+        <div class="payment-section" id="payment">
+            <h3>Payment Options</h3>
+            <p>You can make your payment through:</p>
+            <ul>
+                <li>Net Banking</li>
+                <li>UPI</li>
+            </ul>
+            <div class="animation-logo">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
