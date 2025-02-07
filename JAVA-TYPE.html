@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Example</title>
+  <!-- Author: https://nagvbt.github.io/ -->
+</head>
+<body>
+  <h1 id="heading">Hello, JavaScript!</h1>
+  <button id="btn">Click Me</button>
+
+  <script>
+    // DOM Manipulation
+    const heading = document.getElementById("heading");
+    const button = document.getElementById("btn");
+
+    // Event Handling
+    button.addEventListener("click", () => {
+      heading.textContent = "Button Clicked!";
+      heading.style.color = "red";
+    });
+  </script>
+</body>
+</html>
