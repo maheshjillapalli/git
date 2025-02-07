@@ -1,4 +1,5 @@
-const greet =function(name) {
-   return `hello, ${name}`! 
-};
-console.log(greet("MR.CAPTAIN"));
+const greet = function(name) {
+   return `NAMESTHE, ${name}`;
+ };
+
+ console.log(greet("Mr.captain.93")); 
